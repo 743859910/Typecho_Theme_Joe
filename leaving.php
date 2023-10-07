@@ -43,7 +43,7 @@
                 <?php endwhile; ?>
               </ul>
             <?php else : ?>
-              <div class="joe_detail__leaving-none">暂无留言，期待人类的第一个脚印。</div>
+              <div class="joe_detail__leaving-none">暂无留言，期待第一个脚印。</div>
             <?php endif; ?>
           </div>
         </div>

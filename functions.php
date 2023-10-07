@@ -31,7 +31,7 @@ function themeConfig($form)
           <li class="item" data-current="joe_post">文章设置</li>
           <li class="item" data-current="joe_aside">侧栏设置</li>
           <li class="item" data-current="joe_index">首页设置</li>
-          <li class="item" data-current="joe_other">其它设置</li>
+          <li class="item" data-current="joe_other">其他设置</li>
         </ul>
         <?php require_once('core/backup.php'); ?>
       </div>
@@ -82,7 +82,7 @@ function themeConfig($form)
       'on' => '开启（默认）',
       'off' => '关闭'
     ),
-    'on',
+    '3',
     '开启或关闭全站评论',
     '介绍：用于一键开启关闭所有页面的评论 <br>
          注意：此处的权重优先级最高 <br>
@@ -216,7 +216,7 @@ function themeConfig($form)
     '2019 - 2020 © Reach - <a href="https://78.al" target="_blank" rel="noopener noreferrer">Joe</a>',
     '自定义底部栏左侧内容（非必填）',
     '介绍：用于修改全站底部左侧内容（wap端上方） <br>
-         例如：2019 - 2023 © Reach - Joe             '
+         例如：2019 - 2020 © Reach - Joe             '
   );
   $JFooter_Left->setAttribute('class', 'joe_content joe_global');
   $form->addInput($JFooter_Left);
@@ -317,7 +317,7 @@ function themeConfig($form)
     NULL,
     '网站成立日期（非必填）',
     '介绍：用于显示当前站点已经运行了多少时间。<br>
-         注意：填写时务必保证填写正确！例如：2008/1/1 00:00:00 <br>
+         注意：填写时务必保证填写正确！例如：2021/1/1 00:00:00 <br>
          其他：不填写则不显示，若填写错误，则不会显示计时'
   );
   $JBirthDay->setAttribute('class', 'joe_content joe_global');
@@ -341,8 +341,8 @@ function themeConfig($form)
     NULL,
     '自定义头像源（非必填）',
     '介绍：用于修改全站头像源地址 <br>
-         例如：https://sdn.geekzu.org/avatar/ <br>
-         其他：非必填，默认头像源为https://sdn.geekzu.org/avatar/ <br>
+         例如：https://gravatar.ihuan.me/avatar/ <br>
+         其他：非必填，默认头像源为https://gravatar.helingqi.com/wavatar/ <br>
          注意：填写时，务必保证最后有一个/字符，否则不起作用！'
   );
   $JCustomAvatarSource->setAttribute('class', 'joe_content joe_global');
@@ -351,7 +351,7 @@ function themeConfig($form)
   $JAside_Author_Nick = new Typecho_Widget_Helper_Form_Element_Text(
     'JAside_Author_Nick',
     NULL,
-    "Admin",
+    "Typecho",
     '博主栏博主昵称 - PC/WAP',
     '介绍：用于修改博主栏的博主昵称 <br />
          注意：如果不填写时则显示 *个人设置* 里的昵称'
@@ -419,7 +419,7 @@ function themeConfig($form)
   $JAside_Author_Nav = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Author_Nav',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '3' => '开启，并显示3条最新文章',
       '4' => '开启，并显示4条最新文章',
       '5' => '开启，并显示5条最新文章',
@@ -427,9 +427,9 @@ function themeConfig($form)
       '7' => '开启，并显示7条最新文章',
       '8' => '开启，并显示8条最新文章',
       '9' => '开启，并显示9条最新文章',
-      '10' => '开启，并显示10条最新文章（默认）'
+      '10' => '开启，并显示10条最新文章'
     ),
-    '10',
+    'off',
     '博主栏下方随机文章条目 - PC',
     '介绍：用于设置博主栏下方的随机文章显示数量'
   );
@@ -439,10 +439,10 @@ function themeConfig($form)
   $JAside_Timelife_Status = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Timelife_Status',
     array(
-      'off' => '关闭',
-      'on' => '开启（默认）'
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启人生倒计时模块 - PC',
     '介绍：用于控制是否显示人生倒计时模块'
   );
@@ -452,7 +452,7 @@ function themeConfig($form)
   $JAside_Hot_Num = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Hot_Num',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '3' => '显示3条',
       '4' => '显示4条',
       '5' => '显示5条',
@@ -460,9 +460,9 @@ function themeConfig($form)
       '7' => '显示7条',
       '8' => '显示8条',
       '9' => '显示9条',
-      '10' => '显示10条（默认）',
+      '10' => '显示10条',
     ),
-    '10',
+    'off',
     '是否开启热门文章栏 - PC',
     '介绍：用于控制是否开启热门文章栏'
   );
@@ -472,10 +472,10 @@ function themeConfig($form)
   $JAside_Newreply_Status = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Newreply_Status',
     array(
-      'off' => '关闭',
-      'on' => '开启（默认）'
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启最新回复栏 - PC',
     '介绍：用于控制是否开启最新回复栏 <br>
          注意：如果您关闭了全站评论，将不会显示最新回复！'
@@ -538,10 +538,10 @@ function themeConfig($form)
   $JAside_3DTag = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_3DTag',
     array(
-      'off' => '关闭',
-      'on' => '开启（默认）'
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启3D云标签 - PC',
     '介绍：用于设置侧边栏是否显示3D云标签'
   );
@@ -551,10 +551,10 @@ function themeConfig($form)
   $JAside_Flatterer = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Flatterer',
     array(
-      'off' => '关闭',
-      'on' => '开启（默认）'
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启舔狗日记 - PC',
     '介绍：用于设置侧边栏是否显示舔狗日记'
   );
@@ -564,10 +564,10 @@ function themeConfig($form)
   $JAside_History_Today = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_History_Today',
     array(
-      'off' => '关闭',
-      'on' => '开启（默认）'
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启那年今日 - PC',
     '介绍：用于设置侧边栏是否显示往年今日的文章 <br />
          其他：如果往年今日有文章则显示，没有则不显示！'
@@ -685,8 +685,8 @@ function themeConfig($form)
 
   $JIndex_Hot = new Typecho_Widget_Helper_Form_Element_Radio(
     'JIndex_Hot',
-    array('off' => '关闭', 'on' => '开启（默认）'),
-    'on',
+    array('off' => '关闭（默认）', 'on' => '开启'),
+    'off',
     '是否开启首页热门文章',
     '介绍：开启后，网站首页将会显示浏览量最多的4篇热门文章'
   );
@@ -768,8 +768,8 @@ function themeConfig($form)
 
   $JLimitOneChinese = new Typecho_Widget_Helper_Form_Element_Select(
     'JLimitOneChinese',
-    array('off' => '关闭', 'on' => '开启（默认）'),
-    'on',
+    array('off' => '关闭（默认）', 'on' => '开启'),
+    'off',
     '是否开启评论至少包含一个中文',
     '介绍：开启后如果评论内容未包含一个中文，则将会把评论置为审核状态 <br />
          其他：用于屏蔽国外机器人刷的全英文垃圾广告信息'
@@ -791,7 +791,7 @@ function themeConfig($form)
   $JSiteMap = new Typecho_Widget_Helper_Form_Element_Select(
     'JSiteMap',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '100' => '显示最新 100 条链接',
       '200' => '显示最新 200 条链接',
       '300' => '显示最新 300 条链接',
@@ -801,9 +801,9 @@ function themeConfig($form)
       '700' => '显示最新 700 条链接',
       '800' => '显示最新 800 条链接',
       '900' => '显示最新 900 条链接',
-      '1000' => '显示最新 1000 条链接（默认）',
+      '1000' => '显示最新 1000 条链接',
     ),
-    '1000',
+    'off',
     '是否开启主题自带SiteMap功能',
     '介绍：开启后博客将享有SiteMap功能 <br />
          其他：链接为博客最新实时链接 <br />
@@ -822,7 +822,7 @@ function themeConfig($form)
     NULL,
     '宝塔面板地址',
     '介绍：用于统计页面获取服务器状态使用 <br>
-         例如：http://192.168.0.100:8888/ <br>
+         例如：http://192.168.1.245:8888/ <br>
          注意：结尾需要带有一个 / 字符！<br>
          该功能需要去宝塔面板开启开放API，并添加白名单才可使用'
   );
@@ -844,8 +844,8 @@ function themeConfig($form)
   /* 评论发信 */
   $JCommentMail = new Typecho_Widget_Helper_Form_Element_Select(
     'JCommentMail',
-    array('off' => '关闭', 'on' => '开启（默认）'),
-    'on',
+    array('off' => '关闭（默认）', 'on' => '开启'),
+    'off',
     '是否开启评论邮件通知',
     '介绍：开启后评论内容将会进行邮箱通知 <br />
          注意：此项需要您完整无错的填写下方的邮箱设置！！ <br />
@@ -889,7 +889,7 @@ function themeConfig($form)
     NULL,
     NULL,
     '发件人昵称',
-    '例如：我只是你的过客'
+    '例如：帅气的象拔蚌'
   );
   $JCommentMailFromName->setAttribute('class', 'joe_content joe_other');
   $form->addInput($JCommentMailFromName->multiMode());
@@ -899,7 +899,7 @@ function themeConfig($form)
     NULL,
     NULL,
     '发件人邮箱',
-    '例如：wzsndgk@foxmail.com
+    '例如：2323333339@qq.com'
   );
   $JCommentMailAccount->setAttribute('class', 'joe_content joe_other');
   $form->addInput($JCommentMailAccount->multiMode());
@@ -932,7 +932,7 @@ function themeConfig($form)
   $JOverdue = new Typecho_Widget_Helper_Form_Element_Select(
     'JOverdue',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '3' => '大于3天',
       '7' => '大于7天',
       '15' => '大于15天',
@@ -940,10 +940,9 @@ function themeConfig($form)
       '60' => '大于60天',
       '90' => '大于90天',
       '120' => '大于120天',
-      '180' => '大于180天',
-      '365' => '大于365天（默认）'
+      '180' => '大于180天'
     ),
-    '365',
+    'off',
     '是否开启文章更新时间大于多少天提示（仅针对文章有效）',
     '介绍：开启后如果文章在多少天内无任何修改，则进行提示'
   );

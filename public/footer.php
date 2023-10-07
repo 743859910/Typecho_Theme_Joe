@@ -5,7 +5,7 @@
     </div>
     <?php if ($this->options->JBirthDay) : ?>
       <div class="item run">
-        <span>本站点已稳定运行了 <strong class="joe_run__day">00</strong> 天 <strong class="joe_run__hour">00</strong> 时 <strong class="joe_run__minute">00</strong> 分 <strong class="joe_run__second">00</strong> 秒</span>
+        <span>已运行 <strong class="joe_run__day">00</strong> 天 <strong class="joe_run__hour">00</strong> 时 <strong class="joe_run__minute">00</strong> 分 <strong class="joe_run__second">00</strong> 秒</span>
       </div>
     <?php endif; ?>
     <div class="item">
