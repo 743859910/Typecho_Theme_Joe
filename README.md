@@ -44,7 +44,7 @@
         <td >
 MIT License
 
-Copyright (©) 2008-2023 Powered by wlc743859910. Inc. All Rights Reserved.
+Copyright © 2008-2023 Powered by HiGuoKe. Inc. All Rights Reserved. 我只是你的过客. 版权所有
         </center>
         </td>
     </tr>
