@@ -26,7 +26,7 @@
               <input type="text" value="<?php $this->user->hasLogin() ? $this->user->mail() : $this->remember('mail') ?>" autocomplete="off" name="mail" placeholder="请输入邮箱..." />
             </div>
             <div class="list">
-              <input type="text" autocomplete="off" name="url" placeholder="请输入网址..." />
+              <input type="text" autocomplete="off" name="url" placeholder="请输入网址（非必填）..." />
             </div>
           </div>
           <div class="body">

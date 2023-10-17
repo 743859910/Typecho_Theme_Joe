@@ -41,7 +41,7 @@ function themeConfig($form)
   $JFavicon = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFavicon',
     NULL,
-    'https://blog.higuoke.eu.org/favicon.ico',
+    'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAaVBMVEUAAAA2Jyc2Jyc2Jyc2JyfWngc2Jyc2Jyc2Jyc2Jyc2Jyc2JydGMiSSbhU2Jyc2JydvUhs3Jyc2KCg2JyeYchRWPyCmexE2Jyc2JyfurwOKZhfEkQs2Jyd4Who2KCg2KCg2Jyf9ugD3tgL5+sE2AAAAIHRSTlMA6gsW9vuGMcTQtEb9+JNp+6lQKPz7+55y/fv7OvrZXtrXQoIAAAGdSURBVEjHxdXrcoIwEAXgBSJXi4oXVLwcfP+HbAyRQzrtLE6n0+8XagjZsyHKr8VZwg/ZVjRZhKjx10kOk4qiBBD56yMs7RkFABOLU8O6yE84a+uvLwYoYlHc2+M4pmrTZFZQI5llZfBkjIlmzZ9EGLWi8Nns187SZaTJDJan3umAXFQlcOi9NbASRWMX9Oi9BaDVHd+Arh+dgfr7cXU+KIB1T6elLcO7B9GDFv3Ejt+bbRh95Bjg3NNj//rBjiiD6FPeOnnEwQ6Lh0UXQMXoGcbqWQRL4EKqyc4tGbebqWNI/skcxXtfKjYibMP2uQ6ujjbAdefsw0anvil3Vz8lBqPiyzY2ybCGm5D9TFwR1+SqOYrFqg8L58qNwaqZ6jRXpppxWzKbmjOFnTv48pgNq8nY9HOwMxqeP+V0GXnmNAboFqMPG8jF/VDZSbdBobo0iFIXvntNOmgBfNDVjku9TD0DeArop4zXqYcxc2WqGte5h8O+qf8QS8e9+JqwKbXMUW1e2kT+zKYo8remXzGgeeIIlbwlzeU9SSP/5RPis0lhQ1CXpwAAAABJRU5ErkJggg==',
     '网站 Favicon 设置',
     '介绍：用于设置网站 Favicon，一个好的 Favicon 可以给用户一种很专业的观感 <br />
          格式：图片 URL地址 或 Base64 地址 <br />
@@ -53,7 +53,7 @@ function themeConfig($form)
   $JLogo = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JLogo',
     NULL,
-    'https://blog.higuoke.eu.org/logo.webp',
+    'data:image/png;base64,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',
     '网站 Logo 设置',
     '介绍：用于设置网站 Logo，一个好的 Logo 能为网站带来有效的流量 <br />
          格式：图片 URL地址 或 Base64 地址 <br />
@@ -65,7 +65,7 @@ function themeConfig($form)
   $JAssetsURL = new Typecho_Widget_Helper_Form_Element_Text(
     'JAssetsURL',
     NULL,
-    'https://npm.elemecdn.com/typecho-joe-latest',
+    NULL,
     '自定义静态资源CDN地址（非必填）',
     '介绍：自定义静态资源CDN地址，不填则走本地资源 <br />
      教程：<br />
@@ -82,7 +82,7 @@ function themeConfig($form)
       'on' => '开启（默认）',
       'off' => '关闭'
     ),
-    'on',
+    '3',
     '开启或关闭全站评论',
     '介绍：用于一键开启关闭所有页面的评论 <br>
          注意：此处的权重优先级最高 <br>
@@ -94,15 +94,13 @@ function themeConfig($form)
   $JNavMaxNum = new Typecho_Widget_Helper_Form_Element_Select(
     'JNavMaxNum',
     array(
-      '3' => '3个',
+      '3' => '3个（默认）',
+      '4' => '4个',
       '5' => '5个',
+      '6' => '6个',
       '7' => '7个',
-      '8' => '8个',
-      '10' => '10个（默认）',
-      '12' => '12个',
-      '13' => '13个',
     ),
-    '10',
+    '3',
     '选择导航栏最大显示的个数',
     '介绍：用于设置最大多少个后，以更多下拉框显示'
   );
@@ -118,8 +116,8 @@ function themeConfig($form)
          格式：跳转文字 || 跳转链接（中间使用两个竖杠分隔）<br />
          其他：一行一个，一行代表一个超链接 <br />
          例如：<br />
-            HiGuoKe主站 || https://www.higuoke.eu.org <br />
-            HiGuoKe博客站 || https://blog.higuoke.eu.org
+            百度一下 || https://baidu.com <br />
+            腾讯视频 || https://v.qq.com
          '
   );
   $JCustomNavs->setAttribute('class', 'joe_content joe_global');
@@ -215,10 +213,10 @@ function themeConfig($form)
   $JFooter_Left = new Typecho_Widget_Helper_Form_Element_Textarea(
     'JFooter_Left',
     NULL,
-    'Copyright &copy; 2008-2023 Powered by <a href="https://blog.higuoke.eu.org/" target="_blank">HiGuoKe.</a> Inc.	All Rights Reserved. 我只是你的过客. 版权所有</a>',
+    '2019 - 2020 © Reach - <a href="https://78.al" target="_blank" rel="noopener noreferrer">Joe</a>',
     '自定义底部栏左侧内容（非必填）',
     '介绍：用于修改全站底部左侧内容（wap端上方） <br>
-         例如：Copyright &copy; 2008-2023 Powered by <a href="https://blog.higuoke.eu.org/" target="_blank">HiGuoKe.</a> Inc.	All Rights Reserved. 我只是你的过客. 版权所有'
+         例如：2019 - 2020 © Reach - Joe             '
   );
   $JFooter_Left->setAttribute('class', 'joe_content joe_global');
   $form->addInput($JFooter_Left);
@@ -319,7 +317,7 @@ function themeConfig($form)
     NULL,
     '网站成立日期（非必填）',
     '介绍：用于显示当前站点已经运行了多少时间。<br>
-         注意：填写时务必保证填写正确！例如：2008/10/31 00:00:00 <br>
+         注意：填写时务必保证填写正确！例如：2021/1/1 00:00:00 <br>
          其他：不填写则不显示，若填写错误，则不会显示计时'
   );
   $JBirthDay->setAttribute('class', 'joe_content joe_global');
@@ -343,8 +341,8 @@ function themeConfig($form)
     NULL,
     '自定义头像源（非必填）',
     '介绍：用于修改全站头像源地址 <br>
-         例如：https://cdn.mwm.moe/avatar <br>
-         其他：非必填，默认头像源为https://cdn.mwm.moe/avatar <br>
+         例如：https://gravatar.ihuan.me/avatar/ <br>
+         其他：非必填，默认头像源为https://gravatar.helingqi.com/wavatar/ <br>
          注意：填写时，务必保证最后有一个/字符，否则不起作用！'
   );
   $JCustomAvatarSource->setAttribute('class', 'joe_content joe_global');
@@ -421,7 +419,7 @@ function themeConfig($form)
   $JAside_Author_Nav = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Author_Nav',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '3' => '开启，并显示3条最新文章',
       '4' => '开启，并显示4条最新文章',
       '5' => '开启，并显示5条最新文章',
@@ -429,9 +427,9 @@ function themeConfig($form)
       '7' => '开启，并显示7条最新文章',
       '8' => '开启，并显示8条最新文章',
       '9' => '开启，并显示9条最新文章',
-      '10' => '开启，并显示10条最新文章（默认）',
+      '10' => '开启，并显示10条最新文章'
     ),
-    '10',
+    'off',
     '博主栏下方随机文章条目 - PC',
     '介绍：用于设置博主栏下方的随机文章显示数量'
   );
@@ -441,10 +439,10 @@ function themeConfig($form)
   $JAside_Timelife_Status = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Timelife_Status',
     array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启人生倒计时模块 - PC',
     '介绍：用于控制是否显示人生倒计时模块'
   );
@@ -454,7 +452,7 @@ function themeConfig($form)
   $JAside_Hot_Num = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Hot_Num',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '3' => '显示3条',
       '4' => '显示4条',
       '5' => '显示5条',
@@ -462,9 +460,9 @@ function themeConfig($form)
       '7' => '显示7条',
       '8' => '显示8条',
       '9' => '显示9条',
-      '10' => '显示10条（默认）',
+      '10' => '显示10条',
     ),
-    '10',
+    'off',
     '是否开启热门文章栏 - PC',
     '介绍：用于控制是否开启热门文章栏'
   );
@@ -474,10 +472,10 @@ function themeConfig($form)
   $JAside_Newreply_Status = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Newreply_Status',
     array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启最新回复栏 - PC',
     '介绍：用于控制是否开启最新回复栏 <br>
          注意：如果您关闭了全站评论，将不会显示最新回复！'
@@ -540,10 +538,10 @@ function themeConfig($form)
   $JAside_3DTag = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_3DTag',
     array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启3D云标签 - PC',
     '介绍：用于设置侧边栏是否显示3D云标签'
   );
@@ -553,10 +551,10 @@ function themeConfig($form)
   $JAside_Flatterer = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_Flatterer',
     array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启舔狗日记 - PC',
     '介绍：用于设置侧边栏是否显示舔狗日记'
   );
@@ -566,10 +564,10 @@ function themeConfig($form)
   $JAside_History_Today = new Typecho_Widget_Helper_Form_Element_Select(
     'JAside_History_Today',
     array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
+      'off' => '关闭（默认）',
+      'on' => '开启'
     ),
-    'on',
+    'off',
     '是否开启那年今日 - PC',
     '介绍：用于设置侧边栏是否显示往年今日的文章 <br />
          其他：如果往年今日有文章则显示，没有则不显示！'
@@ -687,11 +685,8 @@ function themeConfig($form)
 
   $JIndex_Hot = new Typecho_Widget_Helper_Form_Element_Radio(
     'JIndex_Hot',
-    array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
-    ),
-    'on',
+    array('off' => '关闭（默认）', 'on' => '开启'),
+    'off',
     '是否开启首页热门文章',
     '介绍：开启后，网站首页将会显示浏览量最多的4篇热门文章'
   );
@@ -773,11 +768,8 @@ function themeConfig($form)
 
   $JLimitOneChinese = new Typecho_Widget_Helper_Form_Element_Select(
     'JLimitOneChinese',
-    array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
-    ),
-    'on',
+    array('off' => '关闭（默认）', 'on' => '开启'),
+    'off',
     '是否开启评论至少包含一个中文',
     '介绍：开启后如果评论内容未包含一个中文，则将会把评论置为审核状态 <br />
          其他：用于屏蔽国外机器人刷的全英文垃圾广告信息'
@@ -799,7 +791,7 @@ function themeConfig($form)
   $JSiteMap = new Typecho_Widget_Helper_Form_Element_Select(
     'JSiteMap',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '100' => '显示最新 100 条链接',
       '200' => '显示最新 200 条链接',
       '300' => '显示最新 300 条链接',
@@ -809,9 +801,9 @@ function themeConfig($form)
       '700' => '显示最新 700 条链接',
       '800' => '显示最新 800 条链接',
       '900' => '显示最新 900 条链接',
-      '1000' => '显示最新 1000 条链接（默认）',
+      '1000' => '显示最新 1000 条链接',
     ),
-    '1000',
+    'off',
     '是否开启主题自带SiteMap功能',
     '介绍：开启后博客将享有SiteMap功能 <br />
          其他：链接为博客最新实时链接 <br />
@@ -852,11 +844,8 @@ function themeConfig($form)
   /* 评论发信 */
   $JCommentMail = new Typecho_Widget_Helper_Form_Element_Select(
     'JCommentMail',
-    array(
-      'on' => '开启（默认）',
-      'off' => '关闭',
-    ),
-    'on',
+    array('off' => '关闭（默认）', 'on' => '开启'),
+    'off',
     '是否开启评论邮件通知',
     '介绍：开启后评论内容将会进行邮箱通知 <br />
          注意：此项需要您完整无错的填写下方的邮箱设置！！ <br />
@@ -900,7 +889,7 @@ function themeConfig($form)
     NULL,
     NULL,
     '发件人昵称',
-    '例如：我只是你的过客'
+    '例如：帅气的象拔蚌'
   );
   $JCommentMailFromName->setAttribute('class', 'joe_content joe_other');
   $form->addInput($JCommentMailFromName->multiMode());
@@ -910,7 +899,7 @@ function themeConfig($form)
     NULL,
     NULL,
     '发件人邮箱',
-    '例如：743859910@qq.com'
+    '例如：2323333339@qq.com'
   );
   $JCommentMailAccount->setAttribute('class', 'joe_content joe_other');
   $form->addInput($JCommentMailAccount->multiMode());
@@ -943,7 +932,7 @@ function themeConfig($form)
   $JOverdue = new Typecho_Widget_Helper_Form_Element_Select(
     'JOverdue',
     array(
-      'off' => '关闭',
+      'off' => '关闭（默认）',
       '3' => '大于3天',
       '7' => '大于7天',
       '15' => '大于15天',
@@ -951,10 +940,9 @@ function themeConfig($form)
       '60' => '大于60天',
       '90' => '大于90天',
       '120' => '大于120天',
-      '180' => '大于180天',
-      '365' => '大于365天（默认）',
+      '180' => '大于180天'
     ),
-    '365',
+    'off',
     '是否开启文章更新时间大于多少天提示（仅针对文章有效）',
     '介绍：开启后如果文章在多少天内无任何修改，则进行提示'
   );
