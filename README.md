@@ -24,6 +24,10 @@
 
 ---
 
+![Visitor Count](https://profile-counter.glitch.me/{Typecho_Theme_Joe}/count.svg)
+
+---
+
 <table>
     <tr>
         <td >
