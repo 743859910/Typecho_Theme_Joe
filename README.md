@@ -2,6 +2,10 @@
 
 ---
 
+Typecho_Theme_Joe 私人定制版
+
+---
+
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/wlc743859910/Typecho_Theme_Joe/img/gh-readme-header.webp">
 </p>
