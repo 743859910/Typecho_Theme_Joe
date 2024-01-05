@@ -1,8 +1,4 @@
-# Typecho_Theme_Joe
-
----
-
-Typecho_Theme_Joe 私人定制版
+# Typecho_Theme_Joe 私人定制版
 
 ---
 
